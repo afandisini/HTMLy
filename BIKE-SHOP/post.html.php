@@ -2,7 +2,7 @@
         <section class="commerce-blog-wrapper col-12 md-col-8 px2 pt2 pb3 md-px4 md-pt1 md-pb3">
             <div>
                 <ul class="list-reset flex jrk flex-wrap">
-                    <li><a href="<?php echo site_url();?>" class="h6">Home</a> ›› </li>
+                    <li><a href="<?php echo site_url();?>" class="h6"><?php echo config('home');?></a> ›› </li>
                     <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="item" class="h6"><?php echo $p->category; ?></span><meta itemprop="position" content="1" /> ››</li>
                     <li><span class="caps" itemprop="item name"><?php echo $p->title; ?></span></li>
                 </ul>
@@ -29,7 +29,7 @@
                 </div>
                 <?php endif; ?>
                     <div class="m2">
-                        <amp-img src="https://lh3.googleusercontent.com/-I-3pQz0nVaE/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnnPygiJKLXQ8Fc4kCeS55_7m3gGA/photo.jpg?sz=40" class="circle left mr2" width="40" height="40" layout="flex-item" title="<?php echo $p->author;?>"></amp-img>
+                        <amp-img src="<?php echo config('google_foto');?>" class="circle left mr2" width="40" height="40" layout="flex-item" title="<?php echo $p->author;?>"></amp-img>
                         <time datetime="<?php echo date('F, Y', $p->date) ?>">
                             <ul class="fa-ul mr2">
                                 <li><?php echo config('fullname');?></li>
