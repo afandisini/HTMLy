@@ -81,9 +81,9 @@
         </nav>
         <hr class="shd m3">
             <ul class="ampstart-sidebar-faq list-reset m0">
-                <li class="ampstart-faq-item"><a href="#" class="text-decoration-none">FAQ</a></li>
-                <li class="ampstart-faq-item"><a href="#" class="text-decoration-none">PRIVASI</a></li>
-                <li class="ampstart-faq-item"><a href="#" class="text-decoration-none">DISCLAIMER</a></li>
+                <li class="ampstart-faq-item"><a href="#" class="text-decoration-none"><?php echo config('faq');?></a></li>
+                <li class="ampstart-faq-item"><a href="#" class="text-decoration-none"><?php echo config('priv');?></a></li>
+                <li class="ampstart-faq-item"><a href="#" class="text-decoration-none"><?php echo config('disclaimer');?></a></li>
             </ul> 
         <hr>
             <ul class="ampstart-sidebar-faq list-reset m0">
@@ -101,31 +101,31 @@
       <nav class="mx-auto md-mb0 md-pt5 md-pb5">
         <ul class="list-reset flex flex-wrap my0 md-pl4 md-pr4 md-mxn4">
           <li class="pt3 md-pt0 md-px4 col-12 md-col-4 lg-col-2">
-              <h2 class="commerce-footer-header h7 pb2">Tentang Kami</h2>
+              <h2 class="commerce-footer-header h7 pb2"><?php echo config('ttk');?></h2>
               <ul class="list-reset pb3 md-mx0">
                   <li>
-                    <a class="text-decoration-none" href="#">FAQ</a>
+                    <a class="text-decoration-none" href="#"><?php echo config('faq');?></a>
                   </li>
                   <li>
-                    <a class="text-decoration-none" href="#">PRIVASI</a>
+                    <a class="text-decoration-none" href="#"><?php echo config('priv');?></a>
                   </li>
                   <li>
-                    <a class="text-decoration-none" href="#">DISCLAIMER</a>
+                    <a class="text-decoration-none" href="#"><?php echo config('disclaimer');?></a>
                   </li>
               </ul>
             <hr class="md-hide lg-hide col-12 mx0">
           </li>
           <li class="pt3 md-pt0 md-px4 col-12 md-col-4 lg-col-2">
-              <h2 class="commerce-footer-header h7 pb2">HUBUNGI KAMI</h2>
+              <h2 class="commerce-footer-header h7 pb2"><?php echo config('cp');?></h2>
               <ul class="list-reset pb3 md-mx0 ">
                   <li>
-                    <a class="text-decoration-none" href="tel:+123456">123456</a>
+                    <a class="text-decoration-none" href="tel:<?php echo config('myphone');?>"><?php echo config('myphone');?></a>
                   </li>
                   <li>
-                    <a class="text-decoration-none" href="mailto:info@ur-website">info@ur-website</a>
+                    <a class="text-decoration-none" href="mailto:<?php echo config('email');?>"><?php echo config('developer');?></a>
                   </li>
                   <li>
-                    <i class="fa fa-map-marker" aria-hidden="true"></i> Indonesia.
+                    <i class="fa fa-map-marker" aria-hidden="true"></i><?php echo config('nkri');?>.
                   </li>
               </ul>
             <hr class="md-hide lg-hide col-12 mx0">
